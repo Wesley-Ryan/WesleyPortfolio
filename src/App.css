@@ -36,14 +36,14 @@ h1 {
   align-items: flex-start;
 }
 #socials {
-  font-size: 3rem;
+  font-size: 4rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 #socials a {
   text-decoration: none;
-  color: black;
+  margin-top: 40px;
 }
 #social-icon {
   margin: 20px;

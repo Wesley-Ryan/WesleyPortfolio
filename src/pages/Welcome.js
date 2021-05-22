@@ -1,6 +1,6 @@
 const Welcome = () => {
   return (
-    <div className="welcome-container">
+    <div className="welcome-container" style={{ color: `black` }}>
       <section id="welcome-banner">
         <h1>👋 Hi, I'm Wesley Ryan</h1>
         <div className="welcome-text">
@@ -19,6 +19,7 @@ const Welcome = () => {
             href="https://github.com/Wesley-Ryan"
             target="_blank"
             rel="noreferrer"
+            style={{ color: `black` }}
           >
             <i className="fab fa-github-square" id="social-icon"></i>
           </a>
@@ -26,6 +27,7 @@ const Welcome = () => {
             href="https://www.linkedin.com/in/wesley-white-dev/"
             target="_blank"
             rel="noreferrer"
+            style={{ color: `black` }}
           >
             <i className="fab fa-linkedin" id="social-icon"></i>
           </a>
