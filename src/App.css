@@ -1,0 +1,58 @@
+@import-normalize;
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3.3rem;
+}
+
+/* Welcome Page  */
+.welcome-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.welcome-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.welcome-text p {
+  font-size: 1.1rem;
+}
+#welcome-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+#welcome-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#socials {
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#socials a {
+  text-decoration: none;
+  color: black;
+}
+#social-icon {
+  margin: 20px;
+}
+
+/* About Page  */
+
+/* Project Page  */
+
+/* Contact Page  */
+
+/* Footer Page  */
