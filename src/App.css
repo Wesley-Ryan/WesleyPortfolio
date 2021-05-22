@@ -52,7 +52,36 @@ h1 {
 /* About Page  */
 
 /* Project Page  */
-
+.projects-container {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+#project-title {
+  font-size: 3rem;
+  font-weight: 600;
+  align-self: flex-start;
+  margin: 50px 0 0 60px;
+}
 /* Contact Page  */
 
 /* Footer Page  */
+
+/* Components */
+
+/* Card */
+
+.card {
+  border: 1px solid red;
+  width: 420px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* Shadow */
+.shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.shadow-Lg {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+}
