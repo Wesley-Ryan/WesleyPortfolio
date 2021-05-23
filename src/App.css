@@ -65,6 +65,61 @@ h1 {
   margin: 50px 0 0 60px;
 }
 /* Contact Page  */
+.contact-container {
+  display: flex;
+}
+.contact-container form {
+  width: 480px;
+  margin: 0 auto;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+}
+.right img {
+  align-self: center;
+}
+
+#contact-heading {
+  font-size: 2rem;
+  align-self: flex-start;
+  margin-left: 80px;
+}
+
+#contact-text {
+  font-size: 1rem;
+  align-self: flex-start;
+  margin: 0 0 0 80px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.form-group label {
+  font-size: 0.8rem;
+  align-self: flex-start;
+  color: #44475a;
+}
+.form-group input {
+  width: 85%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.form-group textarea {
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
 
 /* Footer Page  */
 
