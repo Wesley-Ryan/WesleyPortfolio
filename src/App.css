@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 4.209rem;
   font-weight: 700;
 }
 
@@ -25,11 +25,11 @@ h1 {
   align-items: flex-start;
 }
 .welcome-text p {
-  font-size: 1.1rem;
+  font-size: 1.377rem;
 }
 #welcome-title {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2.369rem;
+  font-weight: 500;
 }
 #welcome-banner {
   display: flex;
@@ -67,11 +67,15 @@ h1 {
 /* Contact Page  */
 .contact-container {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 90px;
+  border: 1px solid black;
+  padding: 12px;
 }
 .contact-container form {
-  width: 480px;
+  width: 450px;
   margin: 0 auto;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -79,22 +83,28 @@ h1 {
 
 .right {
   display: flex;
+  width: 450px;
   justify-content: center;
 }
 .right img {
   align-self: center;
 }
 
+#contact-info {
+  display: flex;
+  flex-direction: column;
+}
 #contact-heading {
   font-size: 2rem;
   align-self: flex-start;
-  margin-left: 80px;
+  margin: 10px 0 0 80px;
 }
 
 #contact-text {
-  font-size: 1rem;
-  align-self: flex-start;
-  margin: 0 0 0 80px;
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 10px 0 0 80px;
+  width: 60%;
 }
 
 .form-group {
@@ -111,14 +121,22 @@ h1 {
 .form-group input {
   width: 85%;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 6px;
   border: 1px solid grey;
 }
 .form-group textarea {
   width: 90%;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 6px;
   border: 1px solid grey;
+  resize: none;
+}
+button {
+  width: 120px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin: 10px;
 }
 
 /* Footer Page  */
@@ -135,9 +153,17 @@ h1 {
   border-radius: 5px;
 }
 /* Shadow */
-.shadow {
+#shadow {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
-.shadow-Lg {
+#shadow-Lg {
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+#slanted {
+  margin-top: -70px;
+  background: plum;
+  height: 110vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }

@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <ParticlesBg type="polygon" bg={true} num={3} />
-      <section id="banner">
-        <Welcome />
-      </section>
+      <Welcome />
       <Projects />
-      <Contact />
+      <section id="slanted">
+        <Contact />
+      </section>
     </div>
   );
 }
