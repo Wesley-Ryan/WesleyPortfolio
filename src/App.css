@@ -1,5 +1,6 @@
 @import-normalize;
 
+/* Site Wide */
 .App {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -8,6 +9,18 @@
 h1 {
   font-size: 4.209rem;
   font-weight: 700;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  margin: 50px 0 0 60px;
+}
+.container {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Welcome Page  */
@@ -51,19 +64,15 @@ h1 {
 }
 
 /* About Page  */
+#about-text {
+  font-size: 1.333rem;
+  text-align: left;
+  margin: 10px 0 0 80px;
+  width: 60%;
+}
 
 /* Project Page  */
-.projects-container {
-  border: 2px solid blue;
-  display: flex;
-  flex-direction: column;
-}
-#project-title {
-  font-size: 3rem;
-  font-weight: 700;
-  align-self: flex-start;
-  margin: 50px 0 0 60px;
-}
+
 /* Contact Page  */
 .contact-container {
   display: flex;
@@ -161,7 +170,9 @@ button {
 }
 
 #slanted {
-  height: 100vh;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  margin-top: -40px;
+  background: plum;
+  height: 30vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
 }
