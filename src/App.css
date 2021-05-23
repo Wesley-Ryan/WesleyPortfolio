@@ -161,9 +161,7 @@ button {
 }
 
 #slanted {
-  margin-top: -70px;
-  background: plum;
-  height: 110vh;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
 }
