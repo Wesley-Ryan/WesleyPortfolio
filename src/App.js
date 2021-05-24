@@ -9,6 +9,16 @@ import Contact from "./pages/Contact.js";
 function App() {
   return (
     <div className="App">
+      <div className="theme-select">
+        <label>My Theme</label>
+        <select name="theme" id="theme">
+          <option value="default">Default</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="waverace">WaveRace 64</option>
+          <option value="90">90's</option>
+        </select>
+      </div>
       <ParticlesBg
         type="polygon"
         bg={{

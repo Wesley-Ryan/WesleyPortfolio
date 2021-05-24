@@ -210,6 +210,32 @@ button {
 }
 
 /* Components */
+.theme-select {
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: -175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.theme-select label {
+  margin-right: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+#theme {
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid white;
+  font-size: 1.77rem;
+  padding: 2px;
+  text-align: center;
+  width: 200px;
+}
 
 /* Card */
 
@@ -224,7 +250,7 @@ button {
 .card img {
   border-radius: 4px;
 }
-/* Shadow */
+/* Designs */
 #shadow {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 }
