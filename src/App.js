@@ -9,7 +9,8 @@ import { useTheme } from "./hooks/useTheme.js";
 import { useState } from "react";
 
 function App() {
-  const { activeTheme, setActiveTheme, defaultTheme } = useTheme();
+  const { activeTheme, setActiveTheme, defaultTheme, waveRaceTheme } =
+    useTheme();
 
   const handleSelect = (e) => {
     switch (e.target.value) {
@@ -20,7 +21,7 @@ function App() {
         setActiveTheme({});
         break;
       case "waverace":
-        setActiveTheme({});
+        setActiveTheme(waveRaceTheme);
         break;
       case "90":
         setActiveTheme({});
@@ -32,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <div className="theme-select">
-        <label>My Theme</label>
+        <label style={{ color: `${activeTheme.highlight}` }}>My Theme</label>
         <select name="theme" id="theme" onChange={(e) => handleSelect(e)}>
           <option value="default">Default</option>
           <option value="light">Light</option>
@@ -42,6 +43,7 @@ function App() {
         </select>
       </div>
       <ParticlesBg
+        color={`${activeTheme.color}`}
         type={`${activeTheme.type}`}
         bg={{
           position: "absolute",
@@ -56,7 +58,10 @@ function App() {
       />
       <Welcome activeTheme={activeTheme} />
       <Projects activeTheme={activeTheme} />
-      <div id="bottom-border"></div>
+      <div
+        id="bottom-border"
+        style={{ borderBottom: `2px solid ${activeTheme.socials}` }}
+      ></div>
       <About activeTheme={activeTheme} />
       <Footer activeTheme={activeTheme} />
     </div>

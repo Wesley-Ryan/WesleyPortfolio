@@ -1,6 +1,6 @@
-const Welcome = () => {
+const Welcome = ({ activeTheme }) => {
   return (
-    <div className="welcome-container" style={{ color: `black` }}>
+    <div className="welcome-container" style={{ color: `${activeTheme.font}` }}>
       <section id="welcome-banner">
         <h1>👋 Hi, I'm Wesley</h1>
         <div className="welcome-text">
@@ -11,7 +11,11 @@ const Welcome = () => {
             href="https://github.com/Wesley-Ryan"
             target="_blank"
             rel="noreferrer"
-            style={{ color: `black` }}
+            style={{
+              color: `${activeTheme.font}`,
+              WebkitTextStrokeWidth: `1px`,
+              WebkitTextStrokeColor: `${activeTheme.socials}`,
+            }}
           >
             <i className="fab fa-github-square" id="social-icon"></i>
           </a>
@@ -19,7 +23,11 @@ const Welcome = () => {
             href="https://www.linkedin.com/in/wesley-white-dev/"
             target="_blank"
             rel="noreferrer"
-            style={{ color: `black` }}
+            style={{
+              color: `${activeTheme.font}`,
+              WebkitTextStrokeWidth: `1px`,
+              WebkitTextStrokeColor: `${activeTheme.socials}`,
+            }}
           >
             <i className="fab fa-linkedin" id="social-icon"></i>
           </a>
