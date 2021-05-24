@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import Linux from "../assets/linux.jpg";
 const Projects = () => {
   return (
-    <div className="container ">
+    <div className="project-container">
       <h2 id="title">Projects</h2>
       <section className="projects-container">
         <Card

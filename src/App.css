@@ -16,7 +16,7 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   align-self: flex-start;
-  margin: 50px 0 0 60px;
+  margin: 40px 0 0 40px;
 }
 .container {
   display: flex;
@@ -26,7 +26,7 @@ h1 {
 }
 #bottom-border {
   border-bottom: 2px solid #5050ee;
-  width: 99%;
+  width: 90%;
   margin: 0 auto;
 }
 /* Welcome Page  */
@@ -35,7 +35,9 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
+  width: 100%;
+  margin-top: -40px;
 }
 .welcome-text {
   height: 100%;
@@ -56,7 +58,7 @@ h1 {
 }
 #socials {
   font-size: 4rem;
-  margin-left: 150px;
+  margin-left: 28%;
 }
 #socials a {
   text-decoration: none;
@@ -68,24 +70,24 @@ h1 {
 
 /* About Page  */
 .about-container {
-  width: 80%;
   display: flex;
   flex-direction: column;
-  padding: 6px;
-  margin-top: 25px;
-  margin-bottom: -190px;
-  background-color: white;
-  height: 60vh;
+  margin: 0 auto;
   text-align: center;
 }
 #about-text {
   font-size: 1.333rem;
-  margin: 10px 0 0 65px;
+  margin: 0 auto;
   width: 90%;
   line-height: 2;
 }
 
 /* Project Page  */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
 
 .projects-container {
   padding: 6px;
@@ -180,9 +182,16 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 450px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
+#footer-title {
+  font-size: 3rem;
+  font-weight: 700;
+  align-self: center;
+  margin-bottom: -20px;
+}
 #footer-text {
   align-self: center;
   font-size: 1.333rem;
@@ -227,4 +236,16 @@ button {
   margin-top: -40px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%);
+}
+
+@media screen and (max-width: 450px) {
+  #socials {
+    margin-left: 25%;
+  }
+  .welcome-container h1 {
+    font-size: 3.5rem;
+  }
+  #welcome-title {
+    font-size: 2rem;
+  }
 }
