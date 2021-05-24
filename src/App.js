@@ -25,7 +25,7 @@ function App() {
       <Welcome />
       <Projects />
       <div id="bottom-border"></div>
-      <Contact />
+      <About />
       <Footer />
     </div>
   );

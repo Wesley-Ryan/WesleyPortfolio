@@ -4,6 +4,7 @@
 .App {
   text-align: center;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 h1 {
@@ -67,6 +68,7 @@ h1 {
 
 /* About Page  */
 .about-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 6px;
@@ -74,7 +76,7 @@ h1 {
   margin-bottom: -190px;
   background-color: white;
   height: 60vh;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+  text-align: center;
 }
 #about-text {
   font-size: 1.333rem;
@@ -178,25 +180,24 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
-  padding-top: 90px;
+  margin-top: 450px;
 }
 
 #footer-text {
-  align-self: flex-start;
-  margin-left: 50px;
+  align-self: center;
   font-size: 1.333rem;
 }
 .footer-container button {
-  margin-left: 175px;
+  align-self: center;
 }
 
 .footer-bottom {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 #footer-year {
   align-self: center;
   font-size: 1.333rem;
+  font-weight: 700;
 }
 
 /* Components */
