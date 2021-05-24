@@ -1,8 +1,8 @@
 const Card = (props) => {
   return (
-    <div className="card">
+    <div className="card" id="shadow">
       <h2>{props.title}</h2>
-      <img src="" alt="project_image" />
+      <img src={props.img} alt="project_image" height="150px" id="shadow-Lg" />
       <p>{props.desc}</p>
     </div>
   );

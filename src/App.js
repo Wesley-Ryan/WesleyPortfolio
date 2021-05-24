@@ -17,13 +17,15 @@ function App() {
           top: 0,
           left: 0,
           background: `#5050ee`,
+          height: `118vh`,
+          clipPath: `polygon(0 0, 100% 0, 100% 85%, 0 100%)`,
         }}
         num={3}
       />
       <Welcome />
       <Projects />
       <div id="bottom-border"></div>
-      <About />
+      <Contact />
       <Footer />
     </div>
   );
