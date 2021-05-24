@@ -2,8 +2,9 @@ import ParticlesBg from "particles-bg";
 import Welcome from "./pages/Welcome.js";
 import Projects from "./pages/Projects.js";
 import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
+import Footer from "./pages/Footer.js";
 import "./App.css";
+import Contact from "./pages/Contact.js";
 
 function App() {
   return (
@@ -15,16 +16,15 @@ function App() {
           zIndex: -1,
           top: 0,
           left: 0,
-          background: "plum",
+          background: `#5050ee`,
         }}
         num={3}
       />
       <Welcome />
-      <div id="slanted"></div>
       <Projects />
+      <div id="bottom-border"></div>
       <About />
-
-      <Contact />
+      <Footer />
     </div>
   );
 }

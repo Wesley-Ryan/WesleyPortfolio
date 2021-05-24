@@ -2,17 +2,9 @@ const Welcome = () => {
   return (
     <div className="welcome-container" style={{ color: `black` }}>
       <section id="welcome-banner">
-        <h1>👋 Hi, I'm Wesley Ryan</h1>
+        <h1>👋 Hi, I'm Wesley</h1>
         <div className="welcome-text">
-          <span id="welcome-title">A Fullstack web developer...</span>
-          <p>
-            who is passionate about privacy and making the Internet cool again.
-            I specialize in all things JavaScript but most of my time is spent
-            in React or Node/Express. I’m proficient in technologies across the
-            entire Stack including SQL and NoSQL databases. I am currently
-            looking for new career opportunities where I have the ability to
-            provide meaningful impact to the project and grow in my career.
-          </p>
+          <span id="welcome-title">A Fullstack JavaScript Developer</span>
         </div>
         <div id="socials">
           <a

@@ -1,4 +1,4 @@
-import Monsters from "../assets/monsters.svg";
+import Hello from "../assets/hello.svg";
 
 const Contact = () => {
   return (
@@ -30,7 +30,7 @@ const Contact = () => {
         </form>
       </section>
       <section className="right">
-        <img src={Monsters} alt="contact_image" height="300px" />
+        <img src={Hello} alt="contact_image" />
       </section>
     </div>
   );
