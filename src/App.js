@@ -5,13 +5,35 @@ import About from "./pages/About.js";
 import Footer from "./pages/Footer.js";
 import "./App.css";
 import Contact from "./pages/Contact.js";
+import { useTheme } from "./hooks/useTheme.js";
+import { useState } from "react";
 
 function App() {
+  const { activeTheme, setActiveTheme, defaultTheme } = useTheme();
+
+  const handleSelect = (e) => {
+    switch (e.target.value) {
+      case "light":
+        setActiveTheme({});
+        break;
+      case "dark":
+        setActiveTheme({});
+        break;
+      case "waverace":
+        setActiveTheme({});
+        break;
+      case "90":
+        setActiveTheme({});
+        break;
+      default:
+        setActiveTheme(defaultTheme);
+    }
+  };
   return (
     <div className="App">
       <div className="theme-select">
         <label>My Theme</label>
-        <select name="theme" id="theme">
+        <select name="theme" id="theme" onChange={(e) => handleSelect(e)}>
           <option value="default">Default</option>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
@@ -20,23 +42,23 @@ function App() {
         </select>
       </div>
       <ParticlesBg
-        type="polygon"
+        type={`${activeTheme.type}`}
         bg={{
           position: "absolute",
           zIndex: -1,
           top: 0,
           left: 0,
-          background: `#5050ee`,
+          background: `${activeTheme.background}`,
           height: `100vh`,
           clipPath: `polygon(0 0, 100% 0, 100% 85%, 0 100%)`,
         }}
         num={3}
       />
-      <Welcome />
-      <Projects />
+      <Welcome activeTheme={activeTheme} />
+      <Projects activeTheme={activeTheme} />
       <div id="bottom-border"></div>
-      <About />
-      <Footer />
+      <About activeTheme={activeTheme} />
+      <Footer activeTheme={activeTheme} />
     </div>
   );
 }
