@@ -58,7 +58,7 @@ function App() {
           top: 0,
           left: 0,
           background: `${activeTheme.background}`,
-          height: `100vh`,
+          height: `118vh`,
           clipPath: `polygon(0 0, 100% 0, 100% 85%, 0 100%)`,
         }}
         num={3}

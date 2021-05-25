@@ -1,11 +1,15 @@
+import Projects from "../assets/project.jpg";
+
 const Card = (props) => {
   return (
     <div
       className="card"
       id="shadow-Lg"
       style={{
-        backgroundColor: `${props.activeTheme.secondaryBG}`,
+        background: `url(${Projects})`,
         color: `${props.activeTheme.secondaryFont}`,
+        WebkitTextStrokeWidth: `1px`,
+        WebkitTextStrokeColor: `${props.activeTheme.highlight}`,
       }}
     >
       <h2>{props.title}</h2>

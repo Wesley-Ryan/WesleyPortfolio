@@ -89,6 +89,7 @@ h1 {
   padding: 2px;
   position: relative;
   z-index: -10;
+  margin-top: 140px;
 }
 
 .projects-container {
