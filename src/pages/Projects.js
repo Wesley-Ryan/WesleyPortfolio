@@ -9,7 +9,7 @@ const Projects = ({ activeTheme }) => {
           color: `${activeTheme.secondaryFont}`,
           WebkitTextStrokeWidth: `1.5px`,
           WebkitTextStrokeColor: `${activeTheme.highlight}`,
-          background: `white`,
+          background: `${activeTheme.secondaryBG}`,
         }}
       >
         Projects

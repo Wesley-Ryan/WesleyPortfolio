@@ -16,15 +16,17 @@ function App() {
     defaultTheme,
     waveRaceTheme,
     ninetyTheme,
+    lightTheme,
+    darkTheme,
   } = useTheme();
 
   const handleSelect = (e) => {
     switch (e.target.value) {
       case "light":
-        setActiveTheme({});
+        setActiveTheme(lightTheme);
         break;
       case "dark":
-        setActiveTheme({});
+        setActiveTheme(darkTheme);
         break;
       case "waverace":
         setActiveTheme(waveRaceTheme);
@@ -64,7 +66,15 @@ function App() {
         num={3}
       />
       <Welcome activeTheme={activeTheme} />
-      <div style={{ background: `url(${activeTheme.bgImage})` }}>
+      <div
+        style={
+          activeTheme.bgImage
+            ? {
+                background: `url(${activeTheme.bgImage})`,
+              }
+            : { background: `${activeTheme.projectBackground}` }
+        }
+      >
         <Projects activeTheme={activeTheme} />
         <div
           id="bottom-border"

@@ -1,10 +1,18 @@
 const About = ({ activeTheme }) => {
   return (
-    <div className="about-container">
+    <div
+      className="about-container"
+      style={
+        activeTheme.name === "dark"
+          ? { backgroundColor: `${activeTheme.background}` }
+          : { backgroundColor: `white` }
+      }
+    >
       <div id="contact-info">
         <h2
           id="title"
           style={{
+            color: `${activeTheme.secondaryFont}`,
             WebkitTextStrokeWidth: `1.5px`,
             WebkitTextStrokeColor: `${activeTheme.highlight}`,
           }}
@@ -12,7 +20,14 @@ const About = ({ activeTheme }) => {
           About
         </h2>
 
-        <p id="about-text">
+        <p
+          id="about-text"
+          style={
+            activeTheme.name === "dark"
+              ? { color: `${activeTheme.font}` }
+              : { color: `black` }
+          }
+        >
           I'm a Fullstack developer who is passionate about privacy and making
           the Internet cool again. I specialize in all things JavaScript but
           most of my time is spent in React or Node/Express. However I am

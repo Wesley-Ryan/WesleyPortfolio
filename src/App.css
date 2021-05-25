@@ -189,12 +189,11 @@ button {
   position: inherit;
   left: 0;
   bottom: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
 }
 
 #footer-title {
