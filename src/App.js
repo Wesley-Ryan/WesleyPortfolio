@@ -4,6 +4,7 @@ import Projects from "./pages/Projects.js";
 import About from "./pages/About.js";
 import Footer from "./pages/Footer.js";
 import "./App.css";
+
 import Contact from "./pages/Contact.js";
 import { useTheme } from "./hooks/useTheme.js";
 import { useState } from "react";
@@ -58,17 +59,18 @@ function App() {
           top: 0,
           left: 0,
           background: `${activeTheme.background}`,
-          height: `118vh`,
-          clipPath: `polygon(0 0, 100% 0, 100% 85%, 0 100%)`,
+          height: `105vh`,
         }}
         num={3}
       />
       <Welcome activeTheme={activeTheme} />
-      <Projects activeTheme={activeTheme} />
-      <div
-        id="bottom-border"
-        style={{ borderBottom: `2px solid ${activeTheme.highlight}` }}
-      ></div>
+      <div style={{ background: `url(${activeTheme.bgImage})` }}>
+        <Projects activeTheme={activeTheme} />
+        <div
+          id="bottom-border"
+          style={{ borderBottom: `3px solid ${activeTheme.highlight}` }}
+        ></div>
+      </div>
       <About activeTheme={activeTheme} />
       <Footer activeTheme={activeTheme} />
     </div>

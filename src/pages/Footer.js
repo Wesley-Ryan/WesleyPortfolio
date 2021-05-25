@@ -10,7 +10,7 @@ const Footer = ({ activeTheme }) => {
       <h3
         id="footer-title"
         style={{
-          WebkitTextStrokeWidth: `1px`,
+          WebkitTextStrokeWidth: `1.5px`,
           WebkitTextStrokeColor: `${activeTheme.highlight}`,
         }}
       >

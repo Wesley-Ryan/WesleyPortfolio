@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ProjectsBG from "../assets/projects.jpg";
 
 const defaultTheme = {
   background: "#5050ee",
@@ -39,8 +40,9 @@ const lightTheme = {
 
 const ninetyTheme = {
   background: "#49297e",
+  bgImage: ProjectsBG,
   secondaryBG: "#05889a",
-  secondaryFont: "white",
+  secondaryFont: "#282a36	",
   font: "#f8f8f2",
   highlight: "#05889a",
   type: "square",

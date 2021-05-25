@@ -5,7 +5,7 @@ const About = ({ activeTheme }) => {
         <h2
           id="title"
           style={{
-            WebkitTextStrokeWidth: `1px`,
+            WebkitTextStrokeWidth: `1.5px`,
             WebkitTextStrokeColor: `${activeTheme.highlight}`,
           }}
         >

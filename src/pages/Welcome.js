@@ -13,7 +13,7 @@ const Welcome = ({ activeTheme }) => {
             rel="noreferrer"
             style={{
               color: `${activeTheme.font}`,
-              WebkitTextStrokeWidth: `1px`,
+              WebkitTextStrokeWidth: `2px`,
               WebkitTextStrokeColor: `${activeTheme.highlight}`,
             }}
           >

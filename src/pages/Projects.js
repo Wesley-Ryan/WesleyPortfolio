@@ -6,8 +6,10 @@ const Projects = ({ activeTheme }) => {
       <h2
         id="title"
         style={{
-          WebkitTextStrokeWidth: `1px`,
+          color: `${activeTheme.secondaryFont}`,
+          WebkitTextStrokeWidth: `1.5px`,
           WebkitTextStrokeColor: `${activeTheme.highlight}`,
+          background: `white`,
         }}
       >
         Projects
