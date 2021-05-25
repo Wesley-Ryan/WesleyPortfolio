@@ -1,9 +1,17 @@
 import Card from "../components/Card";
 import Linux from "../assets/linux.jpg";
-const Projects = () => {
+const Projects = ({ activeTheme }) => {
   return (
     <div className="project-container">
-      <h2 id="title">Projects</h2>
+      <h2
+        id="title"
+        style={{
+          WebkitTextStrokeWidth: `1px`,
+          WebkitTextStrokeColor: `${activeTheme.highlight}`,
+        }}
+      >
+        Projects
+      </h2>
       <section className="projects-container">
         <Card
           title={"Desktop Linux in the Browser"}

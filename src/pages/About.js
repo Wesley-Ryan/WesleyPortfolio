@@ -1,8 +1,16 @@
-const About = () => {
+const About = ({ activeTheme }) => {
   return (
     <div className="about-container">
       <div id="contact-info">
-        <h2 id="title">About</h2>
+        <h2
+          id="title"
+          style={{
+            WebkitTextStrokeWidth: `1px`,
+            WebkitTextStrokeColor: `${activeTheme.highlight}`,
+          }}
+        >
+          About
+        </h2>
 
         <p id="about-text">
           I'm a Fullstack developer who is passionate about privacy and making

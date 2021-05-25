@@ -33,7 +33,9 @@ function App() {
   return (
     <div className="App">
       <div className="theme-select">
-        <label style={{ color: `${activeTheme.highlight}` }}>My Theme</label>
+        <label style={{ color: `${activeTheme.highlight}` }}>
+          Select A Theme
+        </label>
         <select name="theme" id="theme" onChange={(e) => handleSelect(e)}>
           <option value="default">Default</option>
           <option value="light">Light</option>
@@ -60,7 +62,7 @@ function App() {
       <Projects activeTheme={activeTheme} />
       <div
         id="bottom-border"
-        style={{ borderBottom: `2px solid ${activeTheme.socials}` }}
+        style={{ borderBottom: `2px solid ${activeTheme.highlight}` }}
       ></div>
       <About activeTheme={activeTheme} />
       <Footer activeTheme={activeTheme} />

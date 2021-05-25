@@ -7,7 +7,15 @@ const Footer = ({ activeTheme }) => {
         color: `${activeTheme.font}`,
       }}
     >
-      <h3 id="footer-title">Get in touch</h3>
+      <h3
+        id="footer-title"
+        style={{
+          WebkitTextStrokeWidth: `1px`,
+          WebkitTextStrokeColor: `${activeTheme.highlight}`,
+        }}
+      >
+        Get in touch
+      </h3>
       <p id="footer-text">
         Have a project in mind, spot my resume online or just want to say hi?
       </p>

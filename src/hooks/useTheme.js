@@ -6,7 +6,6 @@ const defaultTheme = {
   font: "#f8f8f2",
   highlight: "hotpink",
   type: "polygon",
-  socials: "#3a7bd5",
   button: "hotpink",
 };
 
@@ -16,7 +15,6 @@ const waveRaceTheme = {
   color: "#00c3ff",
   highlight: "#38ff14",
   type: "circle",
-  socials: "#38ff14",
   button: "#38ff14",
 };
 const darkTheme = {

@@ -14,7 +14,7 @@ const Welcome = ({ activeTheme }) => {
             style={{
               color: `${activeTheme.font}`,
               WebkitTextStrokeWidth: `1px`,
-              WebkitTextStrokeColor: `${activeTheme.socials}`,
+              WebkitTextStrokeColor: `${activeTheme.highlight}`,
             }}
           >
             <i className="fab fa-github-square" id="social-icon"></i>
@@ -26,7 +26,7 @@ const Welcome = ({ activeTheme }) => {
             style={{
               color: `${activeTheme.font}`,
               WebkitTextStrokeWidth: `1px`,
-              WebkitTextStrokeColor: `${activeTheme.socials}`,
+              WebkitTextStrokeColor: `${activeTheme.highlight}`,
             }}
           >
             <i className="fab fa-linkedin" id="social-icon"></i>
