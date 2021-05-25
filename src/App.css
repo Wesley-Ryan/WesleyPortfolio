@@ -37,6 +37,7 @@ h1 {
   padding: 10px;
   width: 100%;
   margin-top: -40px;
+  z-index: 99;
 }
 .welcome-text {
   height: 100%;
@@ -86,6 +87,8 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 2px;
+  position: relative;
+  z-index: -10;
 }
 
 .projects-container {

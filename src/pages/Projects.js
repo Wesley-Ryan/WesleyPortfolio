@@ -19,6 +19,7 @@ const Projects = ({ activeTheme }) => {
             "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
           }
           img={Linux}
+          activeTheme={activeTheme}
         />
         <Card
           title={"Desktop Linux in the Browser"}
@@ -26,6 +27,7 @@ const Projects = ({ activeTheme }) => {
             "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
           }
           img={Linux}
+          activeTheme={activeTheme}
         />
         <Card
           title={"Desktop Linux in the Browser"}
@@ -33,6 +35,7 @@ const Projects = ({ activeTheme }) => {
             "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
           }
           img={Linux}
+          activeTheme={activeTheme}
         />
         <Card
           title={"Desktop Linux in the Browser"}
@@ -40,6 +43,7 @@ const Projects = ({ activeTheme }) => {
             "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
           }
           img={Linux}
+          activeTheme={activeTheme}
         />
       </section>
     </div>

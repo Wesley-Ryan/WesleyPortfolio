@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const defaultTheme = {
   background: "#5050ee",
+  secondaryBG: "white",
+  secondaryFont: "black",
   color: "#5050ee",
   font: "#f8f8f2",
   highlight: "hotpink",
@@ -11,6 +13,8 @@ const defaultTheme = {
 
 const waveRaceTheme = {
   background: "linear-gradient(to bottom, #3a7bd5, #00d2ff)",
+  secondaryBG: "white",
+  secondaryFont: "black",
   font: "#f8f8f2",
   color: "#00c3ff",
   highlight: "#38ff14",
@@ -20,25 +24,27 @@ const waveRaceTheme = {
 const darkTheme = {
   background: "#5050ee",
   font: "#f8f8f2",
-  hightlight: "#0480ec",
+  highlight: "#0480ec",
   type: "polygon",
-  socials: "#f8f8f2",
+  button: "",
 };
 
 const lightTheme = {
   background: "#5050ee",
   font: "#f8f8f2",
-  hightlight: "#0480ec",
+  highlight: "#0480ec",
   type: "polygon",
-  socials: "#f8f8f2",
+  button: "",
 };
 
 const ninetyTheme = {
-  background: "#5050ee",
+  background: "#49297e",
+  secondaryBG: "#05889a",
+  secondaryFont: "white",
   font: "#f8f8f2",
-  hightlight: "#0480ec",
+  highlight: "#05889a",
   type: "square",
-  socials: "#f8f8f2",
+  button: "#cc0369",
 };
 
 /*
@@ -92,7 +98,7 @@ type none ?
 90's 
 bg: #72008b / linear-gradient(to left, #db36a4, #f7ff00);
 font #00b48d
-highlight: # fdfc01
+highlight: #fdfc01
 type: square
 
 
@@ -103,5 +109,11 @@ type: square
 export const useTheme = () => {
   const [activeTheme, setActiveTheme] = useState(defaultTheme);
 
-  return { activeTheme, setActiveTheme, defaultTheme, waveRaceTheme };
+  return {
+    activeTheme,
+    setActiveTheme,
+    defaultTheme,
+    waveRaceTheme,
+    ninetyTheme,
+  };
 };

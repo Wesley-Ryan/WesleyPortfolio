@@ -9,8 +9,13 @@ import { useTheme } from "./hooks/useTheme.js";
 import { useState } from "react";
 
 function App() {
-  const { activeTheme, setActiveTheme, defaultTheme, waveRaceTheme } =
-    useTheme();
+  const {
+    activeTheme,
+    setActiveTheme,
+    defaultTheme,
+    waveRaceTheme,
+    ninetyTheme,
+  } = useTheme();
 
   const handleSelect = (e) => {
     switch (e.target.value) {
@@ -23,8 +28,8 @@ function App() {
       case "waverace":
         setActiveTheme(waveRaceTheme);
         break;
-      case "90":
-        setActiveTheme({});
+      case "ninety":
+        setActiveTheme(ninetyTheme);
         break;
       default:
         setActiveTheme(defaultTheme);
@@ -41,7 +46,7 @@ function App() {
           <option value="light">Light</option>
           <option value="dark">Dark</option>
           <option value="waverace">WaveRace 64</option>
-          <option value="90">90's</option>
+          <option value="ninety">90's</option>
         </select>
       </div>
       <ParticlesBg
