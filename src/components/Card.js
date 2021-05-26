@@ -27,6 +27,14 @@ const Card = (props) => {
             WebkitTextStrokeColor: `black`,
           }}
         ></i>
+        <i
+          className="fab fa-github"
+          style={{
+            color: `black`,
+            WebkitTextStrokeWidth: `.7px`,
+            WebkitTextStrokeColor: `black`,
+          }}
+        ></i>
       </footer>
     </div>
   );

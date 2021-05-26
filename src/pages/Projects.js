@@ -1,5 +1,8 @@
 import Card from "../components/Card";
 import Linux from "../assets/linux.jpg";
+import BlueWitness from "../assets/blueWitness.jpg";
+import Weather from "../assets/weather.jpg";
+
 const Projects = ({ activeTheme }) => {
   return (
     <div className="project-container">
@@ -17,34 +20,24 @@ const Projects = ({ activeTheme }) => {
       <section className="projects-container">
         <Card
           title={"Desktop Linux in the Browser"}
-          desc={
-            "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
-          }
+          desc={`Linux in the Browser... This project was created to showcase my abilites as a Frontend Developer while creating a fun take on the "portfolio" website. It uses React, Zustand, Custom Hooks, Framer Motion, and conditional Routes this mobile site if you are viewing https://wesleyryan.dev from a device with a smaller screen.`}
           img={Linux}
           activeTheme={activeTheme}
         />
         <Card
-          title={"Desktop Linux in the Browser"}
+          title={"Blue Witness"}
           desc={
-            "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
+            "The Blue Witness project is a movement to give the public access to reports of police use of force incidents. By crowdsourcing incident reports from twitter and reddit we create a platform where people can contribute to a greater cause. Our database allows our users to export report data for their own use. We strive to provide a single source of truth on the topic of police use of force, that the public can use to inform themselves in the current state of the issue."
           }
-          img={Linux}
+          img={BlueWitness}
           activeTheme={activeTheme}
         />
         <Card
-          title={"Desktop Linux in the Browser"}
+          title={"React Weather"}
           desc={
-            "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
+            "Get the weather with this spaced themed weather app. The app was built with React and the OpenWeather API."
           }
-          img={Linux}
-          activeTheme={activeTheme}
-        />
-        <Card
-          title={"Desktop Linux in the Browser"}
-          desc={
-            "I created this project to showcase my frontend abilites and create a unique take on the Developer portfolio. The project contains a slew of apps including a terminal, notes app and music player."
-          }
-          img={Linux}
+          img={Weather}
           activeTheme={activeTheme}
         />
       </section>

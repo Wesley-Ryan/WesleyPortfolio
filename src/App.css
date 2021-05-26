@@ -108,29 +108,17 @@ h1 {
 
 /* Contact Page  */
 .contact-container {
-  display: flex;
-  width: 80%;
+  width: 300px;
   margin: 0 auto;
-  margin-top: 90px;
   border: 1px solid black;
   border-radius: 6px;
-  padding: 12px;
+  padding: 10px;
 }
 .contact-container form {
-  width: 450px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 400px;
-}
-
-.right {
-  display: flex;
-  width: 450px;
-  justify-content: center;
-}
-.right img {
-  align-self: flex-start;
 }
 
 #contact-info {
@@ -157,9 +145,10 @@ h1 {
   margin: 15px;
 }
 .form-group label {
+  width: 100%;
   font-size: 0.8rem;
+  border: 2px solid red;
   align-self: flex-start;
-  color: #44475a;
 }
 .form-group input {
   width: 85%;

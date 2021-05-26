@@ -1,4 +1,4 @@
-const Footer = ({ activeTheme }) => {
+const Footer = ({ activeTheme, setToggle }) => {
   return (
     <div
       className="footer-container"
@@ -25,6 +25,7 @@ const Footer = ({ activeTheme }) => {
           color: `${activeTheme.font}`,
           border: `1px solid ${activeTheme.highlight} `,
         }}
+        onClick={() => setToggle((prevState) => !prevState)}
       >
         Contact
       </button>

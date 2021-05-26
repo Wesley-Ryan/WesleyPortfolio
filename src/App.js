@@ -4,12 +4,13 @@ import Projects from "./pages/Projects.js";
 import About from "./pages/About.js";
 import Footer from "./pages/Footer.js";
 import "./App.css";
-
+import Modal from "./components/Modal";
 import Contact from "./pages/Contact.js";
 import { useTheme } from "./hooks/useTheme.js";
 import { useState } from "react";
 
 function App() {
+  const [isToggled, setToggle] = useState(false);
   const {
     activeTheme,
     setActiveTheme,
@@ -82,7 +83,12 @@ function App() {
         ></div>
       </div>
       <About activeTheme={activeTheme} />
-      <Footer activeTheme={activeTheme} />
+      {isToggled && (
+        <Modal isToggled={isToggled} setToggle={setToggle}>
+          <Contact activeTheme={activeTheme} />
+        </Modal>
+      )}
+      <Footer activeTheme={activeTheme} setToggle={setToggle} />
     </div>
   );
 }
