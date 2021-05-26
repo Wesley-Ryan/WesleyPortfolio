@@ -27,7 +27,7 @@ const Projects = ({ activeTheme }) => {
         <Card
           title={"Blue Witness"}
           desc={
-            "The Blue Witness project is a movement to give the public access to reports of police use of force incidents. By crowdsourcing incident reports from twitter and reddit we create a platform where people can contribute to a greater cause. Our database allows our users to export report data for their own use. We strive to provide a single source of truth on the topic of police use of force, that the public can use to inform themselves in the current state of the issue."
+            "The Blue Witness project is a movement to give the public access to reports of police use of force incidents. By crowdsourcing incident reports from twitter and reddit we create a platform where people can contribute to a greater cause. This project was a group effort where most of my contributions were on the backend. From cron jobs to OKTA authentication this project kept me learning and exploring. "
           }
           img={BlueWitness}
           activeTheme={activeTheme}
