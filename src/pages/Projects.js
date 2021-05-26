@@ -19,7 +19,7 @@ const Projects = ({ activeTheme }) => {
       </h2>
       <section className="projects-container">
         <Card
-          title={"Desktop Linux in the Browser"}
+          title={"Desktop Linux"}
           desc={`Linux in the Browser... This project was created to showcase my abilites as a Frontend Developer while creating a fun take on the "portfolio" website. It uses React, Zustand, Custom Hooks, Framer Motion, and conditional Routes this mobile site if you are viewing https://wesleyryan.dev from a device with a smaller screen.`}
           img={Linux}
           activeTheme={activeTheme}

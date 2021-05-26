@@ -240,20 +240,69 @@ button {
 
 .card {
   width: 420px;
-  height: 550px;
   padding: 5px;
   margin: 40px 40px 40px 40px;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+footer {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
+#card-tech-title {
+  text-decoration: underline;
+  line-height: 1.5;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title h2 {
+  align-self: flex-start;
+  margin-bottom: 3px;
+}
+.card-title p {
+  align-self: flex-start;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
 .card img {
   border-radius: 4px;
 }
 
-.card footer {
-  font-size: 3rem;
+.card-btn-group button {
+  font-size: 0.8rem;
+  padding: 8px 2px 8px 2px;
+  width: 100px;
+  border: inherit;
+  cursor: pointer;
+}
+
+.tech-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.tech-list li {
+  margin-top: 0;
+  padding: 12px;
+  margin: 4px 8px 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 0.8rem;
 }
 /* Designs */
 #shadow {
