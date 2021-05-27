@@ -23,7 +23,7 @@ const Contact = ({ activeTheme, setToggle }) => {
         </div>
         <div className="form-group">
           <label>Your Email:</label>
-          <input type="text" name="email" />
+          <input type="email" name="email" />
         </div>
         <div className="form-group">
           <label>Your Message:</label>
