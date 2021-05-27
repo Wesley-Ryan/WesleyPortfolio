@@ -1,4 +1,5 @@
-const Card = ({ activeTheme, title, desc, img }) => {
+const Card = ({ activeTheme, project }) => {
+  const { title, subTitle, desc, img, ghUrl, liveUrl, techStack } = project;
   const techItem = {
     background: `${activeTheme.highlight}`,
     color: `${activeTheme.font}`,
@@ -15,38 +16,41 @@ const Card = ({ activeTheme, title, desc, img }) => {
     >
       <div className="card-title">
         <h2>{title}</h2>
-        <p>small text about</p>
+        <p>{subTitle}</p>
       </div>
 
       <img src={img} alt="project_image" height="150px" id="shadow-Lg" />
       <div className="card-btn-group">
-        <button
-          style={{
-            background: `${activeTheme.background}`,
-            color: `${activeTheme.font}`,
-            border: `2px solid ${activeTheme.highlight}`,
-          }}
-        >
-          Github
-        </button>
-        <button
-          style={{
-            background: `${activeTheme.background}`,
-            color: `${activeTheme.font}`,
-            border: `2px solid ${activeTheme.highlight}`,
-          }}
-        >
-          Live Demo
-        </button>
+        <a href={ghUrl} target="_blank" rel="noreferrer">
+          <button
+            style={{
+              background: `${activeTheme.background}`,
+              color: `${activeTheme.font}`,
+              border: `2px solid ${activeTheme.highlight}`,
+            }}
+          >
+            Github
+          </button>
+        </a>
+        <a href={liveUrl} target="_blank" rel="noreferrer">
+          <button
+            style={{
+              background: `${activeTheme.background}`,
+              color: `${activeTheme.font}`,
+              border: `2px solid ${activeTheme.highlight}`,
+            }}
+          >
+            Live Demo
+          </button>
+        </a>
       </div>
       <p>{desc}</p>
       <footer>
         <h4 id="card-tech-title">Tech Stack</h4>
         <ul className="tech-list">
-          <li style={techItem}>React</li>
-          <li style={techItem}>Zustand</li>
-          <li style={techItem}>NodeJs</li>
-          <li style={techItem}>Emotion</li>
+          {techStack.map((item) => {
+            return <li style={techItem}>{item}</li>;
+          })}
         </ul>
       </footer>
     </div>
