@@ -11,18 +11,23 @@ const Contact = ({ activeTheme, setToggle }) => {
           and I will get back to you promptly.
         </p>
       </div>
-      <form style={{ color: `${activeTheme.font}` }}>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        style={{ color: `${activeTheme.font}` }}
+      >
         <div className="form-group">
           <label>Your Name:</label>
-          <input type="text" />
+          <input type="text" name="name" />
         </div>
         <div className="form-group">
           <label>Your Email:</label>
-          <input type="text" />
+          <input type="text" name="email" />
         </div>
         <div className="form-group">
           <label>Your Message:</label>
-          <textarea type="text" />
+          <textarea type="text" name="message" />
         </div>
         <div>
           <button
