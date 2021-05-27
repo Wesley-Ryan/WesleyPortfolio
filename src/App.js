@@ -84,8 +84,8 @@ function App() {
       </div>
       <About activeTheme={activeTheme} />
       {isToggled && (
-        <Modal isToggled={isToggled} setToggle={setToggle}>
-          <Contact activeTheme={activeTheme} />
+        <Modal isToggled={isToggled}>
+          <Contact activeTheme={activeTheme} setToggle={setToggle} />
         </Modal>
       )}
       <Footer activeTheme={activeTheme} setToggle={setToggle} />
