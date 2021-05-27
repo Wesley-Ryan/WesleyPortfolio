@@ -17,11 +17,11 @@ const Contact = ({ activeTheme, setToggle }) => {
         data-netlify="true"
         style={{ color: `${activeTheme.font}` }}
       >
-        <input type="hidden" name="mobile-contact" value="mobile-contact" />
+        <input type="hidden" name="form-name" value="mobile-contact" />
 
         <div className="form-group">
           <label>Your Name:</label>
-          <input type="text" name="name" />
+          <input type="text" name="person" />
         </div>
         <div className="form-group">
           <label>Your Email:</label>
