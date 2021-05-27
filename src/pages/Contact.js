@@ -31,6 +31,7 @@ const Contact = ({ activeTheme, setToggle }) => {
         </div>
         <div>
           <button
+            type="submit"
             style={{
               background: `${activeTheme.button}`,
               color: `${activeTheme.font}`,
