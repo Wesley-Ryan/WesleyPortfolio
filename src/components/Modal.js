@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 
-const Modal = ({ isToggled, setToggle, children }) => {
+const Modal = ({ isToggled, children }) => {
   return (
     <AnimatePresence>
       {isToggled && (
@@ -16,7 +16,6 @@ const Modal = ({ isToggled, setToggle, children }) => {
           }}
         >
           <motion.div initial={{ y: 50 }} animate={{ y: 0 }}>
-            <button onClick={() => setToggle(false)}>Close</button>
             {children}
           </motion.div>
         </motion.div>

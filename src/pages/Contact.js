@@ -1,6 +1,4 @@
-import Hello from "../assets/hello.svg";
-
-const Contact = ({ activeTheme }) => {
+const Contact = ({ activeTheme, setToggle }) => {
   return (
     <div
       className="contact-container"
@@ -27,7 +25,23 @@ const Contact = ({ activeTheme }) => {
           <textarea type="text" />
         </div>
         <div>
-          <button>Submit</button>
+          <button
+            style={{
+              background: `${activeTheme.button}`,
+              color: `${activeTheme.font}`,
+            }}
+          >
+            Submit
+          </button>
+          <button
+            style={{
+              background: `#cf142b`,
+              color: `white`,
+            }}
+            onClick={() => setToggle(false)}
+          >
+            Close
+          </button>
         </div>
       </form>
     </div>
