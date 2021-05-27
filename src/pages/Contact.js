@@ -12,18 +12,20 @@ const Contact = ({ activeTheme, setToggle }) => {
         </p>
       </div>
       <form
-        name="contact"
+        name="mobile-contact"
         method="POST"
         data-netlify="true"
         style={{ color: `${activeTheme.font}` }}
       >
+        <input type="hidden" name="mobile-contact" value="mobile-contact" />
+
         <div className="form-group">
           <label>Your Name:</label>
           <input type="text" name="name" />
         </div>
         <div className="form-group">
           <label>Your Email:</label>
-          <input type="text" name="email" />
+          <input type="email" name="email" />
         </div>
         <div className="form-group">
           <label>Your Message:</label>
@@ -31,6 +33,7 @@ const Contact = ({ activeTheme, setToggle }) => {
         </div>
         <div>
           <button
+            type="submit"
             style={{
               background: `${activeTheme.button}`,
               color: `${activeTheme.font}`,
