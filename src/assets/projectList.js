@@ -7,7 +7,7 @@ export const projectList = [
   {
     title: "Desktop Linux Frontend",
     subTitle: "A portfolio website",
-    desc: "It’s here Linux in the Browser! This project was created to showcase my abilities on the frontend, while creating a fun take on the developer “portfolio”. The project contains a global state management system using Zustand, custom hooks, and even conditional renders a mobile site for devices under 500px in width (bringing it back to the earlier 2000’s). ",
+    desc: "It’s here Linux in the Browser! This project was created to showcase my abilities on the frontend, while creating a fun take on the developer “portfolio”. The project contains a global state management system using Zustand, custom hooks, and even conditional renders a mobile site for devices under 500px in width, which you might be viewing right now. (Bringing it back to the earlier 2000’s with a mobile & desktop site).",
     img: Linux,
     techStack: ["React", "Zustand", "Framer Motion", "Emotion.sh"],
     ghUrl: "https://github.com/Wesley-Ryan",
