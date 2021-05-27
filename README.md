@@ -4,8 +4,8 @@ This is the mobile view for my portfolio website, it is conditionally rendered f
 
 Built with React, and includes theme switcher with following themes: 
 
-Default, 
+Default,  
 Light,  
-Dark, 
-WaveRace 64, 
+Dark,  
+WaveRace 64,  
 90's
