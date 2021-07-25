@@ -17,7 +17,7 @@ const Contact = ({ activeTheme, setToggle }) => {
         data-netlify="true"
         style={{ color: `${activeTheme.font}` }}
       >
-        <input type="hidden" name="form-name" value="mobile-contact" />
+        <input type="hidden" name="form-name" value="contact" />
 
         <div className="form-group">
           <label>Your Name:</label>
