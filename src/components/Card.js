@@ -27,6 +27,7 @@ const Card = ({ activeTheme, project }) => {
               background: `${activeTheme.background}`,
               color: `${activeTheme.font}`,
               border: `2px solid ${activeTheme.highlight}`,
+              margin: `10px`,
             }}
           >
             Github

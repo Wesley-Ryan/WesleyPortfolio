@@ -1,9 +1,26 @@
 import Linux from "./linux.jpg";
+import MNTN from "./MNTN.jpeg";
 import BlueWitness from "./blueWitness.jpg";
 import Weather from "./weather.jpg";
 import Alluiva from "./Alluvia.jpg";
 
 export const projectList = [
+  {
+    title: "MNTN Outerwear Employee Directory",
+    subTitle: "An Employee Directory Built with Typescript",
+    desc: "An Employee directory for MNTN Outerwear. Create an account and join the team. This project was my first dive into Typescript and Material UI. The backend is built with Express and Nodejs, I rolled my own Authentication and user access. Users can browse employees and team members, and edit account. Administrators can edit any account, create accounts, activate and deactivate employees. Did you forget your password? Great register with a valid email and you can use the password reset feature. This will send a unique code to your email and require you to enter the code to change your password.",
+    img: MNTN,
+    techStack: [
+      "React",
+      "Material UI",
+      "Typescript",
+      "Express",
+      "Node",
+      "PostgreSql",
+    ],
+    ghUrl: "https://github.com/Wesley-Ryan/Typescript_Employees",
+    liveUrl: "https://mntn-corp.netlify.app/",
+  },
   {
     title: "Desktop Linux Frontend",
     subTitle: "A portfolio website",

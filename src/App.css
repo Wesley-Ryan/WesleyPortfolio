@@ -4,7 +4,7 @@
 .App {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -60,6 +60,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 150px;
 }
 #socials {
   font-size: 4rem;
@@ -162,7 +163,7 @@ h1 {
   border: 1px solid grey;
   resize: none;
 }
-button {
+#mobile-btn {
   width: 120px;
   padding: 8px;
   font-size: 1.2rem;
@@ -223,6 +224,7 @@ button {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 #theme {
@@ -233,6 +235,7 @@ button {
   padding: 2px;
   text-align: center;
   width: 200px;
+  cursor: pointer;
 }
 
 /* Card */
@@ -283,6 +286,10 @@ footer {
   width: 100px;
   border: inherit;
   cursor: pointer;
+}
+#cg34home {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .tech-list {

@@ -16,13 +16,9 @@ const Projects = ({ activeTheme }) => {
         Projects
       </h2>
       <section className="projects-container">
-        {projectList.map((project) => {
+        {projectList.map((project, index) => {
           return (
-            <Card
-              activeTheme={activeTheme}
-              project={project}
-              key={project.title}
-            />
+            <Card activeTheme={activeTheme} project={project} key={index} />
           );
         })}
       </section>
