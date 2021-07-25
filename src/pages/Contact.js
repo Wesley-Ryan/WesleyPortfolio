@@ -33,6 +33,7 @@ const Contact = ({ activeTheme, setToggle }) => {
         </div>
         <div>
           <button
+            id="mobile-btn"
             type="submit"
             style={{
               background: `${activeTheme.button}`,
@@ -42,6 +43,7 @@ const Contact = ({ activeTheme, setToggle }) => {
             Submit
           </button>
           <button
+            id="mobile-btn"
             style={{
               background: `#cf142b`,
               color: `white`,

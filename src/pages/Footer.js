@@ -20,6 +20,7 @@ const Footer = ({ activeTheme, setToggle }) => {
         Have a project in mind, spot my resume online or just want to say hi?
       </p>
       <button
+        id="mobile-btn"
         style={{
           backgroundColor: `${activeTheme.button}`,
           color: `${activeTheme.font}`,
